@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 });
 
 const User = mongoose.model("User");
-const url = "mongodb+srv://name:Password@cluster0.4uzx0.mongodb.net/dbname?retryWrites=true&w=majority";
+const url = "mongodb+srv://name:Password@cluster0.4uzx0.mongodb.net/dbname?retryWrites=true&w=majority";//change your mongoos db link
 mongoose.connect(url, function(err, db) {
     if (err) throw err;
     console.log("Database connected");
